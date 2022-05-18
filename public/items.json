@@ -26,5 +26,19 @@
         "price": "210/kg",
         "quantity": "100ton",
         "supplier": "m/s rahim grocery"
+    },
+    {
+        "id": "5",
+        "name": "miniket rice",
+        "price": "210/kg",
+        "quantity": "100ton",
+        "supplier": "m/s rahim grocery"
+    },
+    {
+        "id": "6",
+        "name": "miniket rice",
+        "price": "210/kg",
+        "quantity": "100ton",
+        "supplier": "m/s rahim grocery"
     }
 ]

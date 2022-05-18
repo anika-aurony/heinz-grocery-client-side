@@ -5,9 +5,6 @@ import Photo from '../Photo/Photo';
 import './Promises.css'
 
 
-
-
-
 const Promises = () => {
     const pictures = [
         {id: 1, img: promises},
@@ -17,7 +14,7 @@ const Promises = () => {
     return (
         <div >
             <h1 className='text-primary text-center'>Our Promises</h1>
-            <div className='image-container box-shadow-sm'> 
+            <div className='image-container '> 
                {
                    pictures.map(picture => <Photo
                     key={picture.id}

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Inventory from '../Inventory/Inventory';
+import Product from '../Product/Product';
 import './Inventories.css'
 
 
@@ -18,11 +18,11 @@ const Inventories = () => {
             <h1 className='text-primary text-center'>Items</h1>
             <div className="item-container">
                 {
-                    items.map(item => <Inventory key={item.id} item={item}></Inventory>)
+                    items.map(item => <Product key={item.id} item={item}></Product>)
                 }
-
+            
             </div>
-
+            <button>Manage Inventories</button>
         </div>
     );
 };

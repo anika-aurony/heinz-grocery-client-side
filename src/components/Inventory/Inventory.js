@@ -1,18 +1,11 @@
 import React from 'react';
-import './Inventory.css';
+import { useParams } from 'react-router-dom';
 
-const Inventory = ({item}) => {
-    const {name, price, quantity, supplier} = item;
+const Inventory = () => {
+    const {id} = useParams();    
     return (
-        <div className='item'>
-            
-            <img src="" alt=""/>
-            <h2>{name}</h2>
-            <h4>Price:{price}</h4>
-            <h4>Quantity:{quantity}</h4>
-            <h5>Supplier:{supplier}</h5>
-            <p>{"lorem "}</p>
-            <button>Update</button>
+        <div>
+            <h1>Hi:{id}</h1>
         </div>
     );
 };
