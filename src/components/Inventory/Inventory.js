@@ -1,21 +1,18 @@
 import React from 'react';
+import './Inventory.css';
 
-
-const items = [
-    {"id":"1", "name": "miniket rice", "price": '210/kg', "quantity": "100ton", "supplier": "m/s rahim grocery"},
-    {"id":"2", "name": "athash rice", "price": '230/kg', "quantity": "100ton", "supplier": "m/s rahim grocery"},
-    {"id":"3", "name": "atop rice", "price": '200/kg', "quantity": "100ton", "supplier": "m/s rahim grocery"},
-    {"id":"4", "name": "Nazirshail rice", "price": '250/kg', "quantity": "100ton", "supplier": "m/s rahim grocery"},
-    {"id":"5", "name": "wheat", "price": '150/kg', "quantity": "100ton", "supplier": "m/s rahim grocery"},
-    {"id":"6", "name": "basmoti rice", "price": '260/kg', "quantity": "100ton", "supplier": "m/s rahim grocery"},
-
-]
-
-const Inventory = () => {
+const Inventory = ({item}) => {
+    const {name, price, quantity, supplier} = item;
     return (
-        <div>
-          <>INventory</>
+        <div className='item'>
             
+            <img src="" alt=""/>
+            <h2>{name}</h2>
+            <h4>Price:{price}</h4>
+            <h4>Quantity:{quantity}</h4>
+            <h5>Supplier:{supplier}</h5>
+            <p>{"lorem "}</p>
+            <button>Update</button>
         </div>
     );
 };

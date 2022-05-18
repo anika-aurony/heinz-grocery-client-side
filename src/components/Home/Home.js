@@ -1,12 +1,16 @@
 import React from 'react';
-import Inventory from '../Inventory/Inventory';
+import Inventories from '../Inventories/Inventories';
+import Promises from './Promises/Promises';
+
+
 
 
 const Home = () => {
     return (
         <div>
+            <Inventories></Inventories>
+            <Promises></Promises>
             
-            <Inventory></Inventory>
         </div>
     );
 };
