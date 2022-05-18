@@ -11,8 +11,9 @@ const Header = () => {
                     <Navbar.Brand as={Link} to="/">Heinz Grocery</Navbar.Brand>
                     <Nav className="me-auto">
                         <Nav.Link as={Link} to="/home">Home</Nav.Link>
-                        <Nav.Link as={Link} to="#items">Items</Nav.Link>
+                        
                         <Nav.Link as={Link} to="/blogs">Blogs</Nav.Link>
+                        <Nav.Link as={Link} to="/login">Login</Nav.Link>
                     </Nav>
                 </Container>
             </Navbar>
