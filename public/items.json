@@ -1,6 +1,6 @@
 [
     {
-        "id": "_1",
+        "_id": "1",
         "name": "Potato",
         "price": "210/tonne",
         "quantity": "5000tonne",
@@ -9,7 +9,7 @@
         "des": "Fresh potatoes from the field."
     },
     {
-        "id": "_2",
+        "_id": "2",
         "name": "Basmati rice",
         "price": "2100/tonne",
         "quantity": "10000tonne",
@@ -18,7 +18,7 @@
         "des": "Basmati rice is slender-grained aromatic rice. It is a type of white rice."
     },
     {
-        "id": "_3",
+        "_id": "3",
         "name": "Soyabean Oil",
         "price": "210/litre",
         "quantity": "300000 litre",
@@ -27,7 +27,7 @@
         "des": "Soybean oil is a vegetable oil extracted from the seeds of the soybean. It is one of the most widely consumed cooking oils and the second most consumed vegetable oil. "
     },
     {
-        "id": "_4",
+        "_id": "4",
         "name": "Onion",
         "price": "1000/tonne",
         "quantity": "100000ton",
@@ -37,7 +37,7 @@
         
     },
     {
-        "id": "_5",
+        "_id": "5",
         "name": "Brown Suger",
         "price": "500/tonne",
         "quantity": "1000tonne",
@@ -46,7 +46,7 @@
         "des": "Brown sugar is a sucrose sugar product with a distinctive brown color due to the presence of molasses."
     },
     {
-        "id": "_6",
+        "_id": "6",
         "name": "Saffola Oil",
         "price": "1000/5litre",
         "quantity": "10000ton",

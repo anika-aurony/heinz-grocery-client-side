@@ -9,7 +9,7 @@ const Inventories = () => {
     const navigate = useNavigate()
 
     useEffect(() => {
-        fetch('items.json')
+        fetch('http://localhost:5000/inventory')
             .then(res => res.json())
             .then(data => setItems(data));
 
@@ -25,7 +25,7 @@ const Inventories = () => {
             <h1 className='text-primary text-center'>Items</h1>
             <div className="item-container">
                 {
-                    items.map(item => <Product key={item.id} item={item}></Product>)
+                    items.map(item => <Product key={item._id} item={item}></Product>)
                 }
             
             </div>

@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <div>
             <footer>
-                <p><small>copyright@2022</small></p>
+                <p style={{textAlign: 'center', margin: '30px'}}><strong>Copywrite @ 2022</strong></p>
             </footer>
         </div>
     );
