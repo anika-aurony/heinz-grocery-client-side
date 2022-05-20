@@ -1,44 +1,57 @@
 [
     {
-        "id": "1",
-        "name": "miniket rice",
-        "price": "210/kg",
-        "quantity": "100ton",
-        "supplier": "m/s rahim grocery"
+        "id": "_1",
+        "name": "Potato",
+        "price": "210/tonne",
+        "quantity": "5000tonne",
+        "supplier": "m/s chan mia grocery",
+        "img" : "https://i.ibb.co/ZSWFp3z/potato-regular.webp",
+        "des": "Fresh potatoes from the field."
     },
     {
-        "id": "2",
-        "name": "miniket rice",
-        "price": "210/kg",
-        "quantity": "100ton",
-        "supplier": "m/s rahim grocery"
+        "id": "_2",
+        "name": "Basmati rice",
+        "price": "2100/tonne",
+        "quantity": "10000tonne",
+        "supplier": "m/s lal mia grocery",
+        "img" : "https://i.ibb.co/fv2Hqmm/basmati-rice-boiled-25-kg.webp",
+        "des": "Basmati rice is slender-grained aromatic rice. It is a type of white rice."
     },
     {
-        "id": "3",
-        "name": "miniket rice",
-        "price": "210/kg",
-        "quantity": "100ton",
-        "supplier": "m/s rahim grocery"
+        "id": "_3",
+        "name": "Soyabean Oil",
+        "price": "210/litre",
+        "quantity": "300000 litre",
+        "supplier": "m/s rahim grocery",
+        "img": "https://i.ibb.co/ChpcmMn/fresh-fortified-soyabean-oil-8-ltr.webp",
+        "des": "Soybean oil is a vegetable oil extracted from the seeds of the soybean. It is one of the most widely consumed cooking oils and the second most consumed vegetable oil. "
     },
     {
-        "id": "4",
-        "name": "miniket rice",
-        "price": "210/kg",
-        "quantity": "100ton",
-        "supplier": "m/s rahim grocery"
+        "id": "_4",
+        "name": "Onion",
+        "price": "1000/tonne",
+        "quantity": "100000ton",
+        "supplier": "m/s jasim grocery",
+        "img":"https://i.ibb.co/bHNjVpk/lal-peyaj-onion-red-imported-50-gm.webp",
+        "des": "The onion, also known as the bulb onion or common onion, is a vegetable that is the most widely cultivated species of the genus Allium."
+        
     },
     {
-        "id": "5",
-        "name": "miniket rice",
-        "price": "210/kg",
-        "quantity": "100ton",
-        "supplier": "m/s rahim grocery"
+        "id": "_5",
+        "name": "Brown Suger",
+        "price": "500/tonne",
+        "quantity": "1000tonne",
+        "supplier": "m/s mukut grocery",
+        "img":"https://i.ibb.co/7nxbsYH/onatural-brown-sugar-1-kg.webp",
+        "des": "Brown sugar is a sucrose sugar product with a distinctive brown color due to the presence of molasses."
     },
     {
-        "id": "6",
-        "name": "miniket rice",
-        "price": "210/kg",
-        "quantity": "100ton",
-        "supplier": "m/s rahim grocery"
+        "id": "_6",
+        "name": "Saffola Oil",
+        "price": "1000/5litre",
+        "quantity": "10000ton",
+        "supplier": "m/s karim grocery",
+        "img":"https://i.ibb.co/XD3JPYQ/saffola-active-plus-edible-oil-5-ltr.webp",
+        "des": "Saffola Cooking Oil with balanced fatty acids ensure to reduce body cholesterol. It has antioxidants which makes you stay healthy with goodness of oil."
     }
 ]
