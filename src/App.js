@@ -1,5 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import AddItems from './components/AddItems/AddItems';
 import Blogs from './components/Blogs/Blogs';
 import Home from './components/Home/Home';
 import Inventory from './components/Inventory/Inventory';
@@ -7,6 +8,7 @@ import Login from './components/Login/Login/Login';
 import RequiredAuth from './components/Login/RequiredAuth/RequiredAuth';
 import SignUp from './components/Login/SignUp/SignUp';
 import ManageInventories from './components/ManageInventories/ManageInventories';
+import MyItems from './components/MyItems/MyItems';
 import Footer from './components/Shared/Footer/Footer';
 import Header from './components/Shared/Header/Header';
 import NotFound from './components/Shared/NotFound/NotFound';
@@ -27,6 +29,18 @@ function App() {
         <Route path="/manageInventories" element={
           <RequiredAuth>
             <ManageInventories></ManageInventories>
+          </RequiredAuth>
+        
+        }></Route>
+        <Route path="/myItem" element={
+          <RequiredAuth>
+            <MyItems></MyItems>
+          </RequiredAuth>
+        
+        }></Route>
+        <Route path="/addItem" element={
+          <RequiredAuth>
+            <AddItems></AddItems>
           </RequiredAuth>
         
         }></Route>
