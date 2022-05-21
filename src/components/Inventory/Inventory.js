@@ -25,7 +25,7 @@ const Inventory = () => {
             <h4>Quantity:{item.quantity}</h4>
             <h5>Supplier:{item.supplier}</h5>
             <p>ID: {item._id}</p>
-            <button onClick={} className='button'>Delivered</button>
+            <button className='button'>Delivered</button>
             
         </div>
     );
