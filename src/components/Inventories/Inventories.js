@@ -6,7 +6,7 @@ import './Inventories.css'
 
 const Inventories = () => {
     const [items, setItems] = useState([]);
-    const navigate = useNavigate()
+    const navigate = useNavigate();
 
     useEffect(() => {
         fetch('http://localhost:5000/inventory')
