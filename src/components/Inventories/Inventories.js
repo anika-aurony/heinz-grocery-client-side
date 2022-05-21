@@ -8,6 +8,9 @@ const Inventories = () => {
     const [items, setItems] = useState([]);
     const navigate = useNavigate();
 
+    console.log(items);
+    const productItems = items.slice(0,6);
+
     useEffect(() => {
         fetch('http://localhost:5000/inventory')
             .then(res => res.json())
@@ -25,7 +28,8 @@ const Inventories = () => {
             <h1 className='text-primary text-center'>Items</h1>
             <div className="item-container">
                 {
-                    items.map(item => <Product key={item._id} item={item}></Product>)
+                    
+                    productItems.map(productItem => <Product key={productItem._id} item={productItem}></Product>)
                 }
             
             </div>
