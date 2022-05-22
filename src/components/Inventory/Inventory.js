@@ -22,8 +22,8 @@ const Inventory = () => {
 
     const handleRestock = event => {
         event.preventDefault();
-        const quantity = event.target.quantity.value;
-        
+        const restockQuantity = event.target.quantity.value;
+        let quantity =  parseInt(item.quantity)+ parseInt(restockQuantity);
         const updatedQuantity = {quantity};
 
         //send data to the server
@@ -83,10 +83,10 @@ const Inventory = () => {
                 <h2>Product Detail of {item.name}</h2>
                 <img className='pic' src={item.img} alt="" />
                 <h3>{item.name}</h3>
-                <h4>Price:{item.price}</h4>
-                <h4>Quantity:{item.quantity}</h4>
+                <h4>Price: {item.price}</h4>
+                <h4>Quantity: {item.quantity}</h4>
                 
-                <h5>Supplier:{item.supplier}</h5>
+                <h5>Supplier: {item.supplier}</h5>
                 <p>ID: {item._id}</p>
                 <button className='button' onClick={handleDelivered}>Delivered</button>
 

@@ -50,20 +50,15 @@ const ManageInventories = () => {
                             <td>{item.price}</td>
                             <td>{item.quantity}</td>
                             <td>{item.supplier}</td>
+                            <td>{item.email}</td>
+                            
                             <td><button onClick={()=> handleDelete(item._id)}>X</button></td>
                         </tr> )
                     }
 
                 </tbody>
             </Table>
-            {/* {
-                items.map(item => 
-                // <div key={item._id}>
-                //     <h5>{item.name}</h5>
-
-                // </div>
-                )
-            } */}
+          
             <Link to="/addItem" className='mx-auto' onClick={navigateAddItem}><button className='button mt-3 ms-5' >Add Item</button></Link>
         </div>
     );
