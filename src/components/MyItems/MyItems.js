@@ -6,13 +6,17 @@ import auth from '../../firebase.init';
 const MyItems = () => {
     const [items, setItems] = useState([]);
     const [user] = useAuthState(auth);
-    console.log(user)
+    
 
     useEffect(() => {
         const email = user.email;
-        console.log(email)
         
-        fetch(`http://localhost:5000/user?email=${email}`)
+        
+        fetch(`http://localhost:5000/user?email=${email}`, {
+            headers: {
+                authorization: `Bearer ${localStorage.getItem('accessToken')}`
+            }
+        })
             .then(res => res.json())
             .then(data => setItems(data));
 
@@ -27,7 +31,7 @@ const MyItems = () => {
             })
             .then(res => res.json())
             .then(data => {
-                console.log(data);
+                
                 const remaining = items.filter(item => item._id !== id);
                 setItems(remaining);
             })

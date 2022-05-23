@@ -25,13 +25,27 @@ const Login = () => {
     }
 
 
-    const handleSubmit = event => {
+    const handleSubmit = async event => {
         event.preventDefault();
         const email = emailRef.current.value;
         const password = passwordRef.current.value;
-        console.log(email, password)
+        
 
-        signInWithEmailAndPassword(email, password)
+        await signInWithEmailAndPassword(email, password)
+        
+        fetch('http://localhost:5000/login',{
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify({email})
+        })
+        .then(res => res.json())
+        .then(result => {
+            console.log(result);
+            localStorage.setItem('accessToken', result.accessToken);
+            navigate(from, { replace: true });
+        })
     }
 
     const navigateSignUp = event => {

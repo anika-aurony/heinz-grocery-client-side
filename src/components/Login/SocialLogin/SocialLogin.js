@@ -6,13 +6,27 @@ import google from '../../../images/google.png'
 
 const SocialLogin = () => {
     const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
+    
     const navigate = useNavigate();
     const location = useLocation();
     let from = location.state?.from?.pathname || "/";
 
     let errorElement;
     if (user) {
-        navigate(from, { replace: true });
+        const email = auth.currentUser.email;
+        fetch('http://localhost:5000/login',{
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify({email})
+        })
+        .then(res => res.json())
+        .then(result => {
+            console.log(result);
+            localStorage.setItem('accessToken', result.accessToken);
+            navigate(from, { replace: true });
+        })
     }
 
     if (error) {
