@@ -14,7 +14,7 @@ const SocialLogin = () => {
     let errorElement;
     if (user) {
         const email = auth.currentUser.email;
-        fetch('http://localhost:5000/login',{
+        fetch('https://dry-ridge-53156.herokuapp.com/login',{
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

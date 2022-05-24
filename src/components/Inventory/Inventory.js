@@ -8,7 +8,7 @@ const Inventory = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        const url = `http://localhost:5000/inventory/${id}`;
+        const url = `https://dry-ridge-53156.herokuapp.com/inventory/${id}`;
 
         fetch(url)
             .then(res => res.json())
@@ -27,7 +27,7 @@ const Inventory = () => {
         const updatedQuantity = {quantity};
 
         //send data to the server
-        const url = `http://localhost:5000/inventory/${id}`;
+        const url = `https://dry-ridge-53156.herokuapp.com/inventory/${id}`;
         fetch(url,{
             method:'PUT',
             headers: {
@@ -55,7 +55,7 @@ const Inventory = () => {
         const updatedQuantity = {quantity};
 
         //send data to the server
-        const url = `http://localhost:5000/inventory/${id}`;
+        const url = `https://dry-ridge-53156.herokuapp.com/inventory/${id}`;
         fetch(url,{
             method:'PUT',
             headers: {

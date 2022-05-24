@@ -9,8 +9,9 @@ const About = () => {
             <div className='image-container'>
                 <div>
                     <ul className='w-50 mx-auto list-group mt-5 ul'>
-                        <li className='list-group-item list-group-item-success'>Largest warehouse capcity</li>
-                        <li className='list-group-item list-group-item-danger'>Cold stores system</li>
+                        <li className='list-group-item list-group-item-success'>Largest warehouse capacity</li>
+                        <li className='list-group-item list-group-item-dark'>Reasonable price</li>
+                        <li className='list-group-item list-group-item-danger'>Cold stores system available</li>
                         <li className='list-group-item list-group-item-warning'>Optimum temperature maintain</li>
                         <li className='list-group-item list-group-item-info'>Healthy and pure</li>
                         <li className='list-group-item list-group-item-primary'>No preservatives added</li>

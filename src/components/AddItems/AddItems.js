@@ -13,7 +13,7 @@ const AddItems = () => {
 
     const onSubmit = data => {
         console.log(data);
-        const url = `http://localhost:5000/inventory`
+        const url = `https://dry-ridge-53156.herokuapp.com/inventory`
 
         fetch(url,{
             method: 'POST',

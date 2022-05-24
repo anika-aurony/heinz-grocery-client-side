@@ -12,7 +12,7 @@ const Inventories = () => {
     const productItems = items.slice(0,6);
 
     useEffect(() => {
-        fetch('http://localhost:5000/inventory')
+        fetch('https://dry-ridge-53156.herokuapp.com/inventory')
             .then(res => res.json())
             .then(data => setItems(data));
 

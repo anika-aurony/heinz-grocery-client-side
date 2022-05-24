@@ -12,7 +12,7 @@ const MyItems = () => {
         const email = user.email;
         
         
-        fetch(`http://localhost:5000/user?email=${email}`, {
+        fetch(`https://dry-ridge-53156.herokuapp.com/user?email=${email}`, {
             headers: {
                 authorization: `Bearer ${localStorage.getItem('accessToken')}`
             }
@@ -25,7 +25,7 @@ const MyItems = () => {
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure you to delete?');
         if(proceed){
-            const url = `http://localhost:5000/inventory/${id}`;
+            const url = `https://dry-ridge-53156.herokuapp.com/inventory/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })
