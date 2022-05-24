@@ -1,6 +1,6 @@
 # Heinz Grocery Warehouse
 
-# [Live Site](https://guide-for-outings.web.app/)
+# [Live Site](https://heinz-grocery-store.web.app/)
 
 This is grocery warehouse where goods rice, suger, flour, oil and many more grocery items are store.
 
